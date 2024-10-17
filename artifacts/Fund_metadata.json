@@ -7,6 +7,18 @@
 		"abi": [
 			{
 				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "autoRefund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -52,6 +64,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getFund",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -61,6 +86,25 @@
 				"inputs": [],
 				"name": "refund",
 				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -93,11 +137,11 @@
 	},
 	"sources": {
 		"Fund.sol": {
-			"keccak256": "0xe35082b1a0b9e78009341a9dddaa293537a120776c00d156478602738ab93d37",
+			"keccak256": "0x4a873e84a11ae926bfd79e6590d7d0a31816bad03197e28d84b83302ccf75f4d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e527ae2f6ee281e742813d45bca903c84ef967100ed479b54a0ba180e20e28a0",
-				"dweb:/ipfs/QmYbhivcojkEx78WmnAhw9YHKbC2fsBBoXgL8g9ks4RyND"
+				"bzz-raw://d0fb66e3e18ccf5b5d2d8a3e33441927206d02e433e4aff0020cda8c6b84e4e4",
+				"dweb:/ipfs/QmXh5cW2andfHZhtGgHFmoNFLvb28sTwawXzNQdyCjDLnP"
 			]
 		}
 	},
