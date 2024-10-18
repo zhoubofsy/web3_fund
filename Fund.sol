@@ -46,7 +46,7 @@ contract Fund {
 
     function getFund() public onlyOwner {
         bool result = false;
-        (result, ) = payable(msg.sender).call{value: address(this).balance}("");
+        (result, ) = payable(msg.sender).call{value: this.getBalance()}("");
     }
 
     function setOwner(address _addr) public onlyOwner validAddress(_addr) returns (address _owner) {
