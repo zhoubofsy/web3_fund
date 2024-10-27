@@ -1,1 +1,6 @@
 .deps/*
+.deploys/*
+.states/*
+artifacts/*
+.git/*
+.prettierrc.json

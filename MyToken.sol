@@ -31,6 +31,7 @@ contract MyToken is ERC20, Ownable, ERC20Permit {
             /*uint timeStamp*/,
             /*uint80 answeredInRound*/
         ) = dataFeed.latestRoundData();
+
         return uint256(answer) * amount / 10 ** 8;
     }
 
